@@ -1,0 +1,33 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__input {
+    padding: 20px;
+    border: 1px solid rgb(171, 168, 168);
+
+}
+
+.form__button {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.84);
+    color: white;
+    border: none;
+}
+
+.form__button:hover {
+    background: rgba(78, 63, 47, 0.42);
+
+}
+
+.form__button:active {
+    background: rgb(78, 63, 47);
+}
