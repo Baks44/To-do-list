@@ -28,7 +28,6 @@
 
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
-
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
@@ -44,7 +43,7 @@
             htmlString += `
             <li class="task__item js-task">
             <button class="task__button task__button--toggleDone js-done">
-            ${task.done ? "&#x2713;" : ""}
+            ${task.done ? "&#x2713;" : "-"}
             </button>
             <span class="task__content ${task.done ? "task__content--done" : ""}">
             ${task.content}
