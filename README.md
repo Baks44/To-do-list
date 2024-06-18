@@ -19,7 +19,7 @@ Welcome to my simple task manager, am glad you are here! You can easily add&dele
 
 ### Preview:
 
-![To-do-list](ht0tps://github.com/Baks44/To-do-list/blob/eb7ca4bac57b85d8e4c0ab8153ce87c66a156174/images/preview%20to%20do%20list.gif).
+![To-do-list](ht0tps://github.com/Baks44/To-do-list/blob/eb7ca4bac57b85d8e4c0ab8153ce87c66a156174/images/preview%20to%20do%20list.gif)
 
 ### Demo:
 Here you can try by yourself how it works!
