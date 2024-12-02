@@ -13,7 +13,29 @@
     border-bottom: 1px solid #ddd;
 }
 
-.tasks__content--done {
+.task__button--done {
+    background-color: lightgreen;
+    color: white;
+}
+
+.task__button--not-done {
+    background-color: lightcoral;
+    color: white;
+}
+
+.task__item {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.task__button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task__content--done {
     text-decoration: line-through;
 }
 
@@ -25,14 +47,3 @@
     color: rgb(0, 0, 0);
 }
 
-.tasks__button--toggleDone {
-    background: rgba(44, 41, 38);
-}
-
-.tasks__button--toggleDone:hover {
-    background: rgba(44, 41, 38);
-}
-
-.tasks__button--toggleDone:active {
-    background: rgb(44, 41, 38);
-}
