@@ -11,23 +11,30 @@
 }
 
 .form__input {
+    width: 100%;
+    max-width: 700px;
     padding: 20px;
     border: 1px solid rgb(171, 168, 168);
 
 }
 
+
 .form__button {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.84);
+    margin-top: 10px;
+    background: rgb(0, 128, 128);
     color: white;
     border: none;
 }
 
+@media(max-width: 767px) {
+    .form__button {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
 .form__button:hover {
-    background: rgba(78, 63, 47, 0.42);
-
+    background: rgb(0, 128, 128);
 }
 
-.form__button:active {
-    background: rgb(78, 63, 47);
-}

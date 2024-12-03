@@ -14,12 +14,14 @@
 }
 
 .task__button--done {
-    background-color: lightgreen;
+    border:none;
+    background-color: rgb(0, 202, 0);
     color: white;
 }
 
-.task__button--not-done {
-    background-color: lightcoral;
+.task__button--not-done {  
+    border:none;
+    background-color: rgb(0, 202, 0);
     color: white;
 }
 
@@ -28,22 +30,8 @@
     margin: 10px 0;
 }
 
-.task__button {
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
 .task__content--done {
     text-decoration: line-through;
 }
 
-.tasks__button {
-    width: 60px;
-    height: 30px;
-    padding: 0;
-    border: none;
-    color: rgb(0, 0, 0);
-}
 
