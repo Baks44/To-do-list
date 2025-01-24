@@ -18,7 +18,8 @@ Welcome to my simple task manager, am glad you are here! You can easily add&dele
 
 ### Description:
 - In the field, you can write your task and add by clicking the button next to.
-- After adding task, you can mark already done task by clicking a red button.
+- After adding task, you can mark already done task by clicking a green
+  button.
 - If you want to delete task, just click button with bin icon.
 
 ### Demo:
