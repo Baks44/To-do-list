@@ -38,3 +38,8 @@
 .form__button:hover {
     background: rgb(0, 128, 128);
 }
+
+.form__input:focus {
+    border-color: rgb(0, 128, 128);
+    outline-color: black;
+}
