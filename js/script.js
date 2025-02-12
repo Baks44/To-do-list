@@ -43,7 +43,7 @@
             htmlString += `
             <li class="task__item js-task">
             <button class="task__button task__button--toggleDone js-done ${task.done ? "task__button--done" : "task__button--not-done"}">
-            ${task.done ? "&#x2713;" : "&#x2717;"} 
+            ${task.done ? "&#x2713;" : "&nbsp;"} 
             </button> 
             <span class="task__content ${task.done ? "task__content--done" : ""}"> ${task.content} 
             </span>
