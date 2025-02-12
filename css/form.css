@@ -11,6 +11,7 @@
 }
 
 .form__input {
+    height: 10px;
     width: 100%;
     max-width: 700px;
     padding: 20px;
@@ -21,8 +22,7 @@
 
 
 .form__button {
-    padding: 20px;
-    margin-top: 10px;
+    padding: 14px;
     background: rgb(0, 128, 128);
     color: white;
     border: none;
