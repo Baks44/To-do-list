@@ -1,7 +1,8 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 20px;
+    
+    
 }
 
 @media(max-width: 767px) {
@@ -14,7 +15,7 @@
     height: 10px;
     width: 100%;
     max-width: 700px;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid rgb(171, 168, 168);
 
 
@@ -22,7 +23,7 @@
 
 
 .form__button {
-    padding: 14px;
+    padding: 8px;
     background: rgb(0, 128, 128);
     color: white;
     border: none;
@@ -32,6 +33,7 @@
     .form__button {
         grid-template-columns: 1fr;
         width: 100%;
+        margin-left: 0;
     }
 }
 
