@@ -7,7 +7,7 @@
 @media(max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
-        
+
     }
 }
 
@@ -27,16 +27,13 @@
     background: rgb(0, 128, 128);
     color: white;
     border: none;
-    margin-left: 2%;
-   
+
 }
 
 @media(max-width: 767px) {
     .form__button {
         grid-template-columns: 1fr;
         width: 100%;
-        margin-left: 0;
-        margin-top: 10px;
     }
 }
 
