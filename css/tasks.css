@@ -19,7 +19,6 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
-    
 }
 
 .task__button {
@@ -43,7 +42,6 @@
 }
 
 .task__button--not-done {
-
     border: none;
     background-color: rgb(0, 121, 0);
     color: white;
