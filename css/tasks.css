@@ -56,3 +56,19 @@
     border: none;
 
 }
+
+.task__button--done:hover {
+    transition: 1s;
+    background-color: rgb(0, 145, 0);
+}
+
+.task__button--not-done:hover {
+    transition: 1s;
+    background-color: rgb(0, 145, 0);
+}
+
+.task__button--remove:hover {
+    transition: 1s;
+    background-color: rgb(255, 90, 90);
+}
+
