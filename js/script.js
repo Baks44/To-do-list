@@ -1,18 +1,25 @@
 {
-    const tasks = [];
-
+    let tasks = [];
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = tasks.filter((_, index) => index !== taskIndex);
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = tasks.map((task, index) =>
+            index === taskIndex ? { ...task, done: !task.done } : task
+        );
         render();
     };
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({ content: newTaskContent });
+        tasks = [
+            ...tasks,
+            {
+                content: newTaskContent,
+                done: false,
+            },
+        ];
         render();
     };
 
@@ -21,41 +28,46 @@
 
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
-                removeTask(taskIndex)
+                removeTask(taskIndex);
             });
         });
     };
 
     const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
+
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
-
             });
         });
     };
 
     const render = () => {
-        let htmlString = "";
+        const taskListElement = document.querySelector(".js-tasks");
 
-        for (const task of tasks) {
-            htmlString += `
-            <li class="task__item js-task">
-            <button class="task__button task__button--toggleDone js-done ${task.done ? "task__button--done" : "task__button--not-done"}">
-            ${task.done ? "&#x2713;" : "&nbsp;"} 
-            </button> 
-            <span class="task__content ${task.done ? "task__content--done" : ""}"> ${task.content} 
-            </span>
-            <button class="task__button task__button--remove js-remove">&#128465;
-            </button>
-            </li> 
-            `;
-        }
-        document.querySelector(".js-task").innerHTML = htmlString;
+        if (!taskListElement) return;
+
+        taskListElement.innerHTML = tasks
+            .map(
+                (task) => `
+                <li class="task__item">
+                    <button class="task__button task__button--toggleDone js-done ${task.done ? "task__button--done" : "task__button--not-done"
+                    }">
+                        ${task.done ? "&#x2713;" : "&nbsp;"}
+                    </button>
+                    <span class="task__content ${task.done ? "task__content--done" : ""
+                    }">${task.content}</span>
+                    <button class="task__button task__button--remove js-remove">
+                        &#128465;
+                    </button>
+                </li>
+            `
+            )
+            .join("");
+
         bindRemoveEvents();
         bindToggleDoneEvents();
-
     };
 
 
