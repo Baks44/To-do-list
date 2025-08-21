@@ -20,9 +20,11 @@ Welcome to my simple task manager, am glad you are here! You can easily add&dele
 - In the field, you can write your task and add by clicking the button next to.
 - After adding task, you can mark already done task by clicking a green
   button.
+- You can easly hide task by clicking "Ukryj ukończone" or set it done by clicking "Ukończ wszystkie".
 - If you want to delete task, just click button with bin icon.
 
 ### Demo:
 Here you can try by yourself how it works!
 
 https://baks44.github.io/To-do-list/
+
