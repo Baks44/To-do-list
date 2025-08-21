@@ -24,7 +24,7 @@
   gap: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .section__header--with-buttons {
     flex-direction: column-reverse;
     align-items: flex-start;
